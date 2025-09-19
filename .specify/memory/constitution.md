@@ -1,50 +1,73 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- 
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0
+Modified principles: None (new constitution)
+Added sections: All (new constitution)
+Removed sections: None
+Templates requiring updates: 
+  ✅ Updated .specify/templates/plan-template.md
+  ✅ Updated .specify/templates/spec-template.md
+  ✅ Updated .specify/templates/tasks-template.md
+  ✅ Updated .specify/commands/constitution.toml
+  ✅ Updated .specify/commands/implement.toml
+  ✅ Updated .specify/commands/plan.toml
+  ✅ Updated .specify/commands/specify.toml
+  ✅ Updated .specify/commands/tasks.toml
+Follow-up TODOs: None
+-->
+
+# AnRA Lab Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. User-Centered Design
+Every feature must prioritize user needs and business value over technical preferences. Features should solve real problems for users rather than showcase technology. All requirements must be expressed in user terms, not implementation details.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Collaborative Simplicity
+The system must maintain simplicity while enabling effective team collaboration. Avoid unnecessary complexity that doesn't directly enhance user value. When in doubt, start simple and add complexity only when proven necessary.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First Development (NON-NEGOTIABLE)
+Test-driven development is mandatory for all code. Tests must be written before implementation begins. The Red-Green-Refactor cycle must be strictly followed. Every feature must have comprehensive test coverage before being considered complete.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Transparent Communication
+All team activities, task statuses, and project progress must be visible to authorized team members in real-time. The system must facilitate clear communication about tasks, deadlines, and responsibilities without creating information silos.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Secure by Design
+Security must be integrated from the beginning, not added later. Access controls, authentication, and authorization must be implemented as core features. All data must be protected according to industry best practices.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Technology Choices
+- Use free and easily implementable tools when possible to maintain cost efficiency
+- Choose technologies that support rapid prototyping and iteration
+- Prioritize technologies with strong community support and documentation
+- Maintain a minimalist web interface that is easy to navigate
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Code Quality
+- All code must follow consistent style guidelines
+- Code reviews are mandatory for all changes
+- Documentation must be updated alongside code changes
+- Technical debt must be tracked and addressed proactively
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Workflow Requirements
+
+### Feature Development Process
+1. Every feature begins with a detailed specification focusing on user needs
+2. Specifications must define clear acceptance criteria and test scenarios
+3. Implementation follows only after specification is approved
+4. Features must pass all tests before merging
+5. Documentation updates are part of every feature implementation
+
+### Task Management
+- Tasks must be clearly defined with measurable outcomes
+- Task dependencies must be explicitly identified
+- Progress updates must be frequent and accurate
+- Blockers must be escalated immediately
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices and guidelines. Any amendments must be documented with clear rationale and reviewed by the team. Changes that affect existing functionality require a migration plan.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All team members are responsible for ensuring compliance with these principles. Violations must be identified and addressed during code reviews. Complexity must be justified with clear business value.
+
+**Version**: 1.0.0 | **Ratified**: 2025-09-19 | **Last Amended**: 2025-09-19
