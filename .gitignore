@@ -1,0 +1,7 @@
+# Ignore Qwen and Specify directories
+/.qwen/
+/.specify/
+/specs/
+/QWEN.md
+
+# Keep all other project files tracked by Git
