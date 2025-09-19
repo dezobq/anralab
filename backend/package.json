@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "db:init": "node init-db.js"
   },
   "keywords": [],
   "author": "",
